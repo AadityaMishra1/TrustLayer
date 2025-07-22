@@ -3,7 +3,7 @@ const nextConfig = {
     return [
       { 
         source: '/complete_flow', 
-        destination: 'https://aadityamishranuX-ai-trust-layer-backend.hf.space/complete_flow' 
+        destination: 'https://aadityamishranuX-ai-trust-layer-backend.hf.space:5000/complete_flow' 
       },
       { 
         source: '/process', 
