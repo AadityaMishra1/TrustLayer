@@ -1,13 +1,25 @@
 const nextConfig = {
   async rewrites() {
+    // Use environment variable or fallback to HF Spaces
+    const backendUrl = process.env.BACKEND_URL || 'https://aadityamishranuX-ai-trust-layer-backend.hf.space';
+    
     return [
-      { source: '/complete_flow', destination: 'http://localhost:5000/complete_flow' },
-      { source: '/process', destination: 'http://localhost:5000/process' },
-      { source: '/health', destination: 'http://localhost:5000/health' }
+      { 
+        source: '/complete_flow', 
+        destination: `${backendUrl}/complete_flow` 
+      },
+      { 
+        source: '/process', 
+        destination: `${backendUrl}/process` 
+      },
+      { 
+        source: '/health', 
+        destination: `${backendUrl}/health` 
+      }
     ]
   },
   experimental: {
-    proxyTimeout: 600000, // 10 minutes
+    proxyTimeout: 600000, // 10 minutes for AI processing
   },
   eslint: {
     ignoreDuringBuilds: true,
@@ -19,5 +31,4 @@ const nextConfig = {
     unoptimized: true,
   },
 }
-
 export default nextConfig
