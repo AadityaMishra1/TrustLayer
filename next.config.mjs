@@ -3,20 +3,20 @@ const nextConfig = {
     return [
       { 
         source: '/complete_flow', 
-        destination: 'https://aadityamishranuX-ai-trust-layer-backend.hf.space:5000/complete_flow' 
+        destination: 'https://grounds-spam-proof-islamic.trycloudflare.com/complete_flow' 
       },
       { 
         source: '/process', 
-        destination: 'https://aadityamishranuX-ai-trust-layer-backend.hf.space/process' 
+        destination: 'https://grounds-spam-proof-islamic.trycloudflare.com/process' 
       },
       { 
         source: '/health', 
-        destination: 'https://aadityamishranuX-ai-trust-layer-backend.hf.space/health' 
+        destination: 'https://grounds-spam-proof-islamic.trycloudflare.com/health' 
       }
     ]
   },
   experimental: {
-    proxyTimeout: 600000, // 10 minutes
+    proxyTimeout: 600000,
   },
   eslint: {
     ignoreDuringBuilds: true,
