@@ -4,7 +4,7 @@
 
 Sanitize sensitive information before sending to external AI services, then restore it safely. Built for the Nutanix Hackathon 2025.
 
-![Trust Layer Demo](https://img.shields.io/badge/Status-Demo%20Ready-brightgreen)
+![Trust Layer Demo]([https://img.shields.io/badge/Status-Demo%20Ready-brightgreen](https://ai-filter-hackathon.vercel.app/))
 ![Python](https://img.shields.io/badge/Python-3.9+-blue)
 ![AI Model](https://img.shields.io/badge/AI-Llama%203%208B-orange)
 ![Privacy](https://img.shields.io/badge/Privacy-GDPR%20Ready-green)
